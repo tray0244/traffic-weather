@@ -1,0 +1,84 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f2f5;
+  font-family: sans-serif;
+  padding: 20px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  padding: 20px 30px;
+  text-align: center;
+  width: 320px;
+}
+
+.card h1 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.section {
+  border-top: 1px solid #eee;
+  padding: 20px 0;
+}
+
+.section:first-of-type {
+  border-top: none;
+  padding-top: 0;
+}
+
+.section h2 {
+  font-size: 1.1rem;
+  color: #666;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  grid-template-rows: auto auto;
+  align-items: center;
+  gap: 0 10px;
+  text-align: left;
+}
+
+.info-grid img {
+  grid-row: 1 / span 2;
+  width: 100px;
+  height: 100px;
+}
+
+.temperature {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0;
+  align-self: end;
+}
+
+.description {
+  margin: 0;
+  color: #555;
+  text-transform: capitalize;
+  align-self: start;
+}
+
+.air-quality-info p {
+  margin: 8px 0;
+  font-size: 1rem;
+}
+
+.air-quality-info p strong {
+  color: #333;
+}
